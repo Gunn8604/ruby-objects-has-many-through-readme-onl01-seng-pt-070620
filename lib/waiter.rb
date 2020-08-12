@@ -19,7 +19,7 @@ class Waiter
   end
   
   def meals
-    @@all 
+    self.meals.size 
   end
     
 end
