@@ -14,7 +14,7 @@ class Waiter
     @@all
   end
  
- def new_meal(customer, total, tip=0)
+  def new_meal(customer, total, tip=0)
     Meal.new(self, customer, total, tip)
   end
   
@@ -22,8 +22,6 @@ class Waiter
   Meal.all.select do |meal|
     meal.waiter == self #checking for waiter now
   end
-    
-  def best_tipper
-    Customer.new_meal_20_percent.largest
-  end
 end
+    
+  
