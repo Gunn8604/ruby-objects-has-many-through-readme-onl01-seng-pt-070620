@@ -22,4 +22,7 @@ class Waiter
     @@all 
   end
     
+  def best_tipper
+    Customer.new_meal_20_percent.largest
+  end
 end
