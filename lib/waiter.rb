@@ -19,7 +19,7 @@ class Waiter
   end
   
   def meals
-    @@all 
+    Meal 
   end
     
   
